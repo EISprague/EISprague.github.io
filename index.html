@@ -1,31 +1,50 @@
----
-layout: default
-title: Emily Sprague's Portfolio
----
-<div class="blurb">
-	<h1>Emily Sprague's GIS Portfolio</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<!--layout: default
+	title: Emily Sprague's Portfolio-->
+	<title>Emily Sprague's Portfolio</title>
+	<!-- link to main stylesheet -->
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<div>
+	<h1 class="page-title">Emily Sprague's GIS Portfolio</h1>
 	</div>
-<h2>Land use in southwestern Michigan</h2>
-<div class="map with caption">
-	<img src="./maps/Road boundaries.png" alt="Roads 5km buffer" width=618>
-	<p>The roads within a 5km radius of the three study lakes in my M.S. project. This demonstrates that North Lake is likely exposed to relatively low amounts of road salt, while Woods Lake and Asylum Lake are both exposed to much higher amounts of road salt. The conductivity data we collected over several months aligns with these spatial data. This map was a group effort. Preprint version of Dupuis et al., 2019.</p>
-	</div>
-<div class="map with caption">
-	<img src="./maps/Land use 3 time points.png" alt="Land cover watershed map" width=1100>
-	<p>Land cover over the subwatersheds containing the three study lakes in my M.S. project, as a way to determine level of urbanization, which in turn influenced the microbial communities of the lakes. I reclassified the land use types into simpler categories for ease of analysis and to make the three time points comparable since they didn't have the exact same original categories. I produced this for my Introduction to GIS class. Made with ArcMap 10.4. Projected using the NAD 1983 Hotine Oblique Mercator Azimuth Natural Origin projection system. The 1800 and 1978 land cover data were taken from the State of Michigan, and the 2011 land cover data was taken from the National Land Cover Database 2011 (NLCD 2011). The subwatershed boundaries are the 12-digit HUC level (State of Michigan).</p>
+<div class="within-page-links">
+	<h3>Contents</h3>
+	<ul>
+		<li><a href="#southwesternMI">Land use in southwestern Michigan</a></li>
+		<ul>
+			<li><a href="#5kmbuffer">Roads within a 5km buffer of three lakes</a></li>
+			<li><a href="#Landtimeseries">Land cover at three time points within three watersheds</a></li>
+			<li><a href="#2counties">Sub-watersheds of Kalamazoo and Van Buren counties</a></li>
+		</ul>
+	</ul>
 </div>
-<div class="map with caption">
-	<img src="./maps/Both counties.jpg" alt="Watersheds in counties" width=1000>
-	<p>Spatial context of the three subwatersheds in the land cover map above within their respective counties. I produced this for my Introduction to GIS class. Made with ArcMap 10.4. Projected using the NAD 1983 Hotine Oblique Mercator Azimuth Natural Origin projection system. The county boundaries and subwatershed boundaries were taken from the State of Michigan. The subwatershed boundaries are the 12-digit HUC level (State of Michigan).</p>
+<h2 id="southwesternMI">Land use in southwestern Michigan</h2>
+<div id="5kmbuffer" class="map-w-caption">
+	<h3>Roads within a 5km buffer of three lakes</h3>
+	<img class="map" src="./maps/Road boundaries.png" alt="Roads 5km buffer" width=700px>
+	<p class="map-caption">The roads within a 5km radius of the three study lakes in my M.S. project. This demonstrates that North Lake is likely exposed to relatively low amounts of road salt, while Woods Lake and Asylum Lake are both exposed to much higher amounts of road salt. The conductivity data we collected over several months aligns with these spatial data. This map was a group effort. Preprint version of Dupuis et al., 2019.</p>
+	</div>
+<div id="Landtimeseries" class="map-w-caption">
+	<h3>Land cover at three time points within three watersheds</h3>
+	<img class="map" src="./maps/Land use 3 time points.png" alt="Land cover watershed map" width=100%>
+	<p class="map-caption">Land cover over the subwatersheds containing the three study lakes in my M.S. project, as a way to determine level of urbanization, which in turn influenced the microbial communities of the lakes. I reclassified the land use types into simpler categories for ease of analysis and to make the three time points comparable since they didn't have the exact same original categories. I produced this for my Introduction to GIS class. Made with ArcMap 10.4. Projected using the NAD 1983 Hotine Oblique Mercator Azimuth Natural Origin projection system. The 1800 and 1978 land cover data were taken from the State of Michigan, and the 2011 land cover data was taken from the National Land Cover Database 2011 (NLCD 2011). The subwatershed boundaries are the 12-digit HUC level (State of Michigan).</p>
+</div>
+<div id="2counties" class="map-w-caption">
+	<img class="map" src="./maps/Both counties.jpg" alt="Watersheds in counties" width=850px>
+	<p class="map-caption">Spatial context of the three subwatersheds in the land cover map above within their respective counties. I produced this for my Introduction to GIS class. Made with ArcMap 10.4. Projected using the NAD 1983 Hotine Oblique Mercator Azimuth Natural Origin projection system. The county boundaries and subwatershed boundaries were taken from the State of Michigan. The subwatershed boundaries are the 12-digit HUC level (State of Michigan).</p>
 </div>
 <div class="references">
-	<h2>References</h2>
+	<h3>References</h3>
 	<ul>
 		<li>Dupuis D, Sprague E, Docherty KM, Koretsky CM. The influence of road salt on seasonal mixing, redox stratification and methane concentrations in urban kettle lakes. Science of the Total Environment. (2019). 661:514–21. <a href="https://doi.org/10.1016/j.scitotenv.2019.01.191">https://doi.org/10.1016/j.scitotenv.2019.01.191</a></li>
 		</ul>
-	<h2>Data sources</h2>
+	<h3>Data sources</h3>
 	<ul>
 		<li>State of Michigan GIS Data Portal. <a href="http://gis-michigan.opendata.arcgis.com/">(link)</a></li>
 		<li>U.S. Geological Survey, 20141010, NLCD 2011 Land Cover (2011 Edition, amended 2014), by State: NLCD2011_LC_Michigan: U.S. Geological Survey. <a href="https://www.sciencebase.gov/catalog/item/5a1c31b0e4b09fc93dd638c0">(link)</a></li>
 	</ul>
 </div>
+</html>
