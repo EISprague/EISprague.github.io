@@ -38,7 +38,8 @@ h3 {
 	padding-top: 10px;
 }
 .within-page-links ul {
-    margin-top: 0;
+	margin-top: 0;
+	text-decoration: underline;
 }
 .map-w-caption h3 {
     text-align: center;
@@ -73,8 +74,7 @@ nav ul, footer ul {
 }
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 20px;
-	
+    margin-right: 20px;	
 }
 a {
     text-decoration: none;
