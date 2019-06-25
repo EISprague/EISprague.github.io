@@ -38,8 +38,10 @@ h3 {
 	padding-top: 10px;
 }
 .within-page-links ul {
+	display: block;
 	margin-top: 0;
 	text-decoration: underline;
+	list-style-type: disc;
 }
 .map h3 {
     text-align: center;
