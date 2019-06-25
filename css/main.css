@@ -1,3 +1,4 @@
+/*All pages*/
 * {
 	    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
@@ -33,50 +34,9 @@ h2 {
 h3 {
     font-size: 24px;
 }
-.within-page-links h3 {
-    margin: 0;
-	padding-top: 10px;
-}
-.within-page-links ul {
-	display: block;
-	margin-top: 0;
-	text-decoration: underline;
-	list-style-type: disc;
-}
-.map h3 {
-    text-align: center;
-}
 figcaption {
     font-size: 20px;
     color: #333;
-}
-.map {
-	display: block;
-    width: 100%;
-	max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.map img {
-	display: block;
-	width: 100%;
-	margin-left: auto;
-    margin-right: auto;  
-}
-#fivekmbuffer img {
-	max-width: 750px;
-}
-#twocounties img {
-	max-width: 850px;
-}
-#butterfly img {
-	max-width: 350px;
-}
-#ohiohomes img {
-	max-width: 475px;
-}
-#hikers img {
-	max-width: 500px;
 }
 nav ul, footer ul {
     padding: 0px;
@@ -96,10 +56,6 @@ a {
 a:hover {
     text-decoration: underline;
     font-weight: bold;
-}
-.within-page-links a {
-    color: black;
-    font-size: 20px;
 }
 footer {
 	display: block;
@@ -122,4 +78,51 @@ footer a:hover {
 }
 .references ul {
 	margin: 0px;
+}
+
+/*Maps page*/
+.within-page-links h3 {
+    margin: 0;
+	padding-top: 10px;
+}
+.within-page-links ul {
+	display: block;
+	margin-top: 0;
+	text-decoration: underline;
+	list-style-type: disc;
+}
+.within-page-links a {
+    color: black;
+    font-size: 20px;
+}
+.map {
+	display: block;
+    width: 100%;
+	max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.map h3 {
+    text-align: center;
+}
+.map img {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+    margin-right: auto;  
+}
+#fivekmbuffer img {
+	max-width: 750px;
+}
+#twocounties img {
+	max-width: 850px;
+}
+#butterfly img {
+	max-width: 350px;
+}
+#ohiohomes img {
+	max-width: 475px;
+}
+#hikers img {
+	max-width: 500px;
 }
