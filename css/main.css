@@ -41,37 +41,39 @@ h3 {
 	margin-top: 0;
 	text-decoration: underline;
 }
-.map-w-caption h3 {
+.map h3 {
     text-align: center;
 }
-p {
+figcaption {
     font-size: 20px;
     color: #333;
 }
-.map-w-caption {
+.map {
 	display: block;
     width: 100%;
 	max-width: 100%;
-}
-.map {
-	display: block;
     margin-left: auto;
     margin-right: auto;
-	width: 100%;    
 }
-#fivekmbuffer .map {
+.map img {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+    margin-right: auto;  
+}
+#fivekmbuffer img {
 	max-width: 750px;
 }
-#twocounties .map {
+#twocounties img {
 	max-width: 850px;
 }
-#butterfly .map {
+#butterfly img {
 	max-width: 350px;
 }
-#ohiohomes .map {
+#ohiohomes img {
 	max-width: 475px;
 }
-#hikers .map {
+#hikers img {
 	max-width: 500px;
 }
 nav ul, footer ul {
