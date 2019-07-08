@@ -140,3 +140,9 @@ footer a:hover {
 #hikers img {
 	max-width: 500px;
 }
+
+/*CV page*/
+.download {
+	display: block;
+	padding-top: 10px;
+}
