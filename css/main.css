@@ -17,6 +17,9 @@ span ul li {
 	display: inline;
 	padding: 5px 10px 5px 0;
 }
+span ul li a {
+	color: #675D5D;
+}
 main {
 	display: block;
 	width: 80%;
@@ -57,13 +60,11 @@ nav ul, footer ul {
 	color: white;
 	margin: 0;
 }
-
 nav {
 	width: 80%;
 	margin: 0 auto;
 }
 nav ul li {
-	color: black;
 	font-style: italic;
 }
 a {
@@ -111,10 +112,15 @@ footer a:hover {
 	text-decoration: underline;
 	list-style-type: disc;
 	padding: 0 0 10px 20px;
+	color: #675D5D;
 }
+
 .within-page-links a {
-    color: black;
+    color: #675D5D;
     font-size: 20px;
+}
+.within-page-links a:hover {
+	color: black;
 }
 #links-bottom {
 	border-bottom: 5px solid teal;
