@@ -2,64 +2,68 @@
 layout: default
 title: Emily Sprague's Portfolio
 ---
-<body>
-	<header>
-		<h1 class="page-title">Emily Sprague's GIS Portfolio</h1>
-	</header>
-	<main>
-	<div class="within-page-links">
-		<h3>Contents</h3>
-			<ul>
-				<li><a href="#southwesternMI">Land use in southwestern Michigan</a></li>
-			<ul>
-				<li><a href="#fivekmbuffer">Roads within a 5km buffer of three lakes</a></li>
-				<li><a href="#Landtimeseries">Land cover at three time points within three watersheds</a></li>
-				<li><a href="#twocounties">Sub-watersheds of Kalamazoo and Van Buren counties</a></li>
-			</ul>
-				<li><a href="#geogclass">Introduction to Geographic Information Systems assignments</a></li>
-			<ul>
-				<li><a href="#butterfly">Suitable butterfly habitat</a></li>
-				<li><a href="#ohiohomes">Seasonal homes in Ohio</a></li>
-				<li><a href="#hikers">Path to stranded hikers and campsite emergency</a></li>
-			</ul>
-			</ul>
+<header>
+	<h1 id="maps-page-title" class="page-title">Emily Sprague's GIS Portfolio</h1>
+</header>
+<nav class="within-page-links">
+	<div id="links-bottom">
+	<h2>Contents</h2>
+	<ul>
+		<li><a href="#southwesternMI">Land use in southwestern Michigan</a></li>
+		<ul>
+			<li><a href="#fivekmbuffer">Roads within a 5km buffer of three lakes</a></li>
+			<li><a href="#Landtimeseries">Land cover at three time points within three watersheds</a></li>
+			<li><a href="#twocounties">Sub-watersheds of Kalamazoo and Van Buren counties</a></li>
+		</ul>
+		<li><a href="#geogclass">Introduction to Geographic Information Systems assignments</a></li>
+		<ul>
+			<li><a href="#butterfly">Suitable butterfly habitat</a></li>
+			<li><a href="#ohiohomes">Seasonal homes in Ohio</a></li>
+			<li><a href="#hikers">Path to stranded hikers and campsite emergency</a></li>
+		</ul>
+	</ul>
 	</div>
+</nav>
+<main id="maps-main">
+	<section id="southwesternMI">
+		<h2>Land use in southwestern Michigan</h2>
+		<figure id="fivekmbuffer" class="map">
+			<h3>Roads within a 5km buffer of three lakes</h3>
+			<img src="./maps/Road boundaries.png" alt="Roads 5km buffer">
+			<figcaption>The roads within a 5km radius of the three study lakes in my M.S. project. This demonstrates that North Lake is likely exposed to relatively low amounts of road salt, while Woods Lake and Asylum Lake are both exposed to much higher amounts of road salt. The conductivity data we collected over several months aligns with these spatial data. This map was a group effort. Preprint version of <a href=#references>Dupuis et al., 2019. Spatial data from (Breck, 2004; Statewide All Roads Layer, 2014).</a></figcaption>
+		</figure>
+		<figure id="Landtimeseries" class="map">
+			<h3>Land cover at three time points within three watersheds</h3>
+			<img src="./maps/Land use 3 time points.png" alt="Land cover watershed map">
+			<figcaption>Land cover over the subwatersheds containing the three study lakes in my M.S. project, as a way to determine level of urbanization, which in turn influenced the microbial communities of the lakes. I reclassified the land use types into simpler categories for ease of analysis and to make the three time points comparable since they didn't have the exact same original categories. I produced this for my Introduction to GIS class. Made with ArcMap 10.4. Projected using the NAD 1983 Hotine Oblique Mercator Azimuth Natural Origin projection system. Spatial data from <a href=#references>(Land Cover Circa 1800, 2015; Watershed Boundary - 12 Digit; MIRIS, 1978; USGS, 2014).</a></figcaption>
+		</figure>
+		<figure id="twocounties" class="map">
+			<h3>Sub-watersheds of Kalamazoo and Van Buren counties</h3>
+			<img src="./maps/Both counties.jpg" alt="Watersheds in counties">
+			<figcaption>Spatial context of the three subwatersheds in the land cover map above within their respective counties. I produced this for my Introduction to GIS class. Made with ArcMap 10.4. Projected using the NAD 1983 Hotine Oblique Mercator Azimuth Natural Origin projection system. Spatial data from <a href="#references">(Counties, 2014; Watershed Boundary - 12 Digit).</a></figcaption>
+		</figure>
+	</section>
 
-	<h2 id="southwesternMI">Land use in southwestern Michigan</h2>
-	<figure id="fivekmbuffer" class="map">
-		<h3>Roads within a 5km buffer of three lakes</h3>
-		<img src="./maps/Road boundaries.png" alt="Roads 5km buffer">
-		<figcaption>The roads within a 5km radius of the three study lakes in my M.S. project. This demonstrates that North Lake is likely exposed to relatively low amounts of road salt, while Woods Lake and Asylum Lake are both exposed to much higher amounts of road salt. The conductivity data we collected over several months aligns with these spatial data. This map was a group effort. Preprint version of <a href=#references>Dupuis et al., 2019. Spatial data from (Breck, 2004; Statewide All Roads Layer, 2014).</a></figcaption>
-	</figure>
-	<figure id="Landtimeseries" class="map">
-		<h3>Land cover at three time points within three watersheds</h3>
-		<img src="./maps/Land use 3 time points.png" alt="Land cover watershed map">
-		<figcaption>Land cover over the subwatersheds containing the three study lakes in my M.S. project, as a way to determine level of urbanization, which in turn influenced the microbial communities of the lakes. I reclassified the land use types into simpler categories for ease of analysis and to make the three time points comparable since they didn't have the exact same original categories. I produced this for my Introduction to GIS class. Made with ArcMap 10.4. Projected using the NAD 1983 Hotine Oblique Mercator Azimuth Natural Origin projection system. Spatial data from <a href=#references>(Land Cover Circa 1800, 2015; Watershed Boundary - 12 Digit; MIRIS, 1978; USGS, 2014).</a></figcaption>
-	</figure>
-	<figure id="twocounties" class="map">
-		<h3>Sub-watersheds of Kalamazoo and Van Buren counties</h3>
-		<img src="./maps/Both counties.jpg" alt="Watersheds in counties">
-		<figcaption>Spatial context of the three subwatersheds in the land cover map above within their respective counties. I produced this for my Introduction to GIS class. Made with ArcMap 10.4. Projected using the NAD 1983 Hotine Oblique Mercator Azimuth Natural Origin projection system. Spatial data from <a href="#references">(Counties, 2014; Watershed Boundary - 12 Digit).</a></figcaption>
-	</figure>
+	<section id="geogclass">
+		<h2>Introduction to Geographic Information Systems assignments</h2>
+		<figure id="butterfly" class="map">
+			<h3>Suitable butterfly habitat</h3>
+			<img src="./maps/Suitable butterfly habitat.jpg" alt="Suitable butterfly habitat">
+			<figcaption class="map">I made this during an hour long lab quiz. It is based on raster data, where we had to find the most suitable habitat available for an endangered species of butterfly. The butterflies required a central hardwood forest habitat that was also within 1000 feet of a river. Made with ArcMap 10.4.</figcaption>
+		</figure>
+		<figure id="ohiohomes" class="map">
+			<h3>Seasonal homes in Ohio</h3>
+			<img src="./maps/Ohio seasonal homes.jpg" alt="Ohio seasonal homes">
+			<figcaption>This choropleth map shows the percentage of Ohio total housing stock that seasonal/vacation homes make up, following chapter 3 in <a href="references">Discovering GIS and ArcGIS.</a> Made with ArcMap 10.4.</figcaption>
+		</figure>
+		<figure id="hikers" class="map">
+			<h3>Path to stranded hikers and campsite emergency</h3>
+			<img src="./maps/Stranded hikers.jpg" alt="Path to stranded hikers">
+			<figcaption>This map is the final output from a series of calculations finding the shortest cost-distance from a ranger station to a group of stranded hikers and a separate campsite with an emergency. The cost-distance analysis involved Euclidean distance, land cover, and slope, which required 3D analysis. This follows chapter 19 in <a href="references">Discovering GIS and ArcGIS.</a> Made with ArcScene and ArcMap 10.4.</figcaption>
+		</figure>
+	</section>
 
-	<h2 id="geogclass">Introduction to Geographic Information Systems assignments</h2>
-	<figure id="butterfly" class="map">
-		<h3>Suitable butterfly habitat</h3>
-		<img src="./maps/Suitable butterfly habitat.jpg" alt="Suitable butterfly habitat">
-		<figcaption class="map">I made this during an hour long lab quiz. It is based on raster data, where we had to find the most suitable habitat available for an endangered species of butterfly. The butterflies required a central hardwood forest habitat that was also within 1000 feet of a river. Made with ArcMap 10.4.</figcaption>
-	</figure>
-	<figure id="ohiohomes" class="map">
-		<h3>Seasonal homes in Ohio</h3>
-		<img src="./maps/Ohio seasonal homes.jpg" alt="Ohio seasonal homes">
-		<figcaption>This choropleth map shows the percentage of Ohio total housing stock that seasonal/vacation homes make up, following chapter 3 in <a href="references">Discovering GIS and ArcGIS.</a> Made with ArcMap 10.4.</figcaption>
-	</figure>
-	<figure id="hikers" class="map">
-		<h3>Path to stranded hikers and campsite emergency</h3>
-		<img src="./maps/Stranded hikers.jpg" alt="Path to stranded hikers">
-		<figcaption>This map is the final output from a series of calculations finding the shortest cost-distance from a ranger station to a group of stranded hikers and a separate campsite with an emergency. The cost-distance analysis involved Euclidean distance, land cover, and slope, which required 3D analysis. This follows chapter 19 in <a href="references">Discovering GIS and ArcGIS.</a> Made with ArcScene and ArcMap 10.4.</figcaption>
-	</figure>
-
-	<div id="references" class="references">
+	<section id="references" class="references">
 		<h3>References</h3>
 		<ul>
 			<li>Dupuis D, Sprague E, Docherty KM, Koretsky CM. The influence of road salt on seasonal mixing, redox stratification and methane concentrations in urban kettle lakes. Science of the Total Environment. (2019). 661:514–21. <a href="https://doi.org/10.1016/j.scitotenv.2019.01.191">https://doi.org/10.1016/j.scitotenv.2019.01.191</a></li>
@@ -75,6 +79,5 @@ title: Emily Sprague's Portfolio
 			<li>Statewide All Roads Layer. Michigan Geographic Framework: State of Michigan version 14a. Lansing, MI: Center for Shared Solutions and Technology Partnerships, 2014. Accessed April 2017.</li>
 			<li><a href="https://www.sciencebase.gov/catalog/item/5a1c31b0e4b09fc93dd638c0">U.S. Geological Survey, NLCD 2011 Land Cover (2011 Edition, amended 2014), by State: NLCD2011_LC_Michigan: U.S. Geological Survey, 2014. Accessed April 2017.</a></li>
 		</ul>
-	</div>
-	</main>
-</body>
+	</section>
+</main>

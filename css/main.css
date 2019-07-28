@@ -1,6 +1,6 @@
 /*All pages*/
 * {
-	    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+	font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 body {
 	margin: 0px;
@@ -12,6 +12,10 @@ header {
 	width: 100%;
 	padding: 5px 0;
 	letter-spacing: 2px;
+}
+span ul li {
+	display: inline;
+	padding: 5px 10px 5px 0;
 }
 main {
 	display: block;
@@ -29,11 +33,13 @@ h1 {
 	margin: 15px;
 }
 h2 {
-    font-size: 28px;
+	font-size: 28px;
+	margin-bottom: 5px;
 }
 h3 {
 	font-size: 24px;
 	margin-top: 0;
+	margin-bottom: 10px;
 	padding-top: 12px;
 }
 ul {
@@ -51,15 +57,12 @@ nav ul, footer ul {
 	color: white;
 	margin: 0;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
+
 nav {
 	width: 80%;
 	margin: 0 auto;
 }
-nav ul li a {
+nav ul li {
 	color: black;
 	font-style: italic;
 }
@@ -69,7 +72,6 @@ a {
 }
 a:hover {
     text-decoration: underline;
-    font-weight: bold;
 }
 footer {
 	display: block;
@@ -85,7 +87,6 @@ footer a {
 }
 footer a:hover {
     text-decoration: underline;
-    font-weight: bold;
 }
 .references {
 	padding-bottom: 15px;
@@ -95,26 +96,40 @@ footer a:hover {
 }
 
 /*Maps page*/
-.within-page-links h3 {
+.within-page-links {
+	border-right: 10px double teal;
+	border-left: 10px double teal;
+	padding: 0 5px;
+}
+.within-page-links h2 {
     margin: 0;
-	padding-top: 10px;
+	padding: 15px 0 0 0;
 }
 .within-page-links ul {
 	display: block;
 	margin-top: 0;
 	text-decoration: underline;
 	list-style-type: disc;
+	padding: 0 0 10px 20px;
 }
 .within-page-links a {
     color: black;
     font-size: 20px;
+}
+#links-bottom {
+	border-bottom: 5px solid teal;
+}
+#southwesternMI h2 {
+	margin: 0;
+	padding: 15px 0;
 }
 .map {
 	display: block;
     width: 100%;
 	max-width: 100%;
     margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+	margin-top: 0;
 }
 .map h3 {
     text-align: center;
