@@ -1,123 +1,81 @@
 /*All pages*/
 * {
 	font-family:'Helvetica', 'Arial', 'Sans-Serif';
+	text-align: justify;
 }
+/*Default layout*/
 body {
-	margin: 0px;
-	border: 0px;
-}
-header {
-	display: block;
-	background-color: teal;
-	width: 100%;
-	padding: 5px 0;
-	letter-spacing: 2px;
-}
-span ul li {
-	display: inline;
-	padding: 5px 10px 5px 0;
-}
-span ul li a {
-	color: #675D5D;
-}
-main {
-	display: block;
-	width: 80%;
-	border-right: 10px double teal;
-	border-left: 10px double teal;
-	margin: 0 auto 0 auto;
-	padding: 0 5px;
-}
-h1 {
-    font-size: 50px;
-    font-family: 'Impact', 'Arial', 'Sans-Serif';
-	color: white;
-	text-align: center;
-	margin: 15px;
-}
-h2 {
-	font-size: 28px;
-	margin-bottom: 5px;
-}
-h3 {
-	font-size: 24px;
-	margin-top: 0;
-	margin-bottom: 10px;
-	padding-top: 12px;
-}
-ul {
-	margin-bottom: 0;
-	padding-bottom: 12px;
-}
-figcaption {
-    font-size: 20px;
-    color: #333;
-}
-nav ul, footer ul {
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-	color: white;
 	margin: 0;
 }
-nav {
-	width: 80%;
+#page-nav span ul {
 	margin: 0 auto;
+	padding: 0;
+	width: 80%;
 }
-nav ul li {
+#page-nav span ul li, #page-nav span ul li a {
+	display: inline;
+	padding: 5px 10px 5px 0;
+	color: #675D5D;
+	font-weight: bold;
 	font-style: italic;
+	text-decoration: none;
 }
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
+#page-nav span ul li a:hover {
+	text-decoration: underline;
 }
 footer {
 	display: block;
 	background-color: teal;
 	width: 100%;
-	margin: 0;
-	padding: 7px;
+	padding: 15px 0;
 }
-footer a {
-	color: white;	
+footer p, footer a {
+	width: 80%;
+	margin: 0 auto;
+	color: white;
+	text-align: right;
     font-size: 20px;
 	font-weight: bold;
+	text-decoration: none;
 }
 footer a:hover {
     text-decoration: underline;
 }
-.references {
-	padding-bottom: 15px;
+/*Any page*/
+.page-title {
+	display: block;
+	width: 100%;	
+	margin: 0;
+	padding: 5px 0;
+	background-color: teal;
+	color: white;
+	text-align: center;
+	font-family: 'Impact', 'Arial', 'Sans-Serif';
+	font-size: 50px;
+	letter-spacing: 2px;
 }
-.references ul {
-	margin: 0px;
-}
-
-/*Maps page*/
 .within-page-links {
+	width: 80%;
+	margin: 0 auto;
 	border-right: 10px double teal;
 	border-left: 10px double teal;
-	padding: 0 5px;
+	padding: 0 10px;
 }
 .within-page-links h2 {
-    margin: 0;
-	padding: 15px 0 0 0;
+	margin: 0;
+	padding: 7px 0;
 }
 .within-page-links ul {
 	display: block;
-	margin-top: 0;
+	margin: 0 0 10px 0;
 	text-decoration: underline;
 	list-style-type: disc;
-	padding: 0 0 10px 20px;
+	padding: 0 20px;
 	color: #675D5D;
-}
-
-.within-page-links a {
-    color: #675D5D;
     font-size: 20px;
+}
+.within-page-links ul li a {
+	color: #675D5D;
 }
 .within-page-links a:hover {
 	color: black;
@@ -125,27 +83,56 @@ footer a:hover {
 #links-bottom {
 	border-bottom: 5px solid teal;
 }
-#southwesternMI h2 {
-	margin: 0;
-	padding: 15px 0;
-}
-.map {
+main {
 	display: block;
-    width: 100%;
-	max-width: 100%;
-    margin-left: auto;
-	margin-right: auto;
-	margin-top: 0;
+	width: 80%;
+	border-right: 10px double teal;
+	border-left: 10px double teal;
+	margin: 0 auto;
+	padding: 0 10px;
 }
-.map h3 {
-    text-align: center;
+main h2 {
+	margin: 0;
+	padding: 20px 0 5px 0;
 }
-.map img {
+main h3 {
+	text-align: center;
+	margin: 0;
+}
+figure {
+	width: 95%;
+	margin: 0 auto;
+}
+figure~figure {
+	padding-top: 15px;
+}
+figure img {
 	display: block;
 	width: 100%;
 	margin-left: auto;
-    margin-right: auto;  
+	margin-right: auto;
 }
+figcaption {
+	padding-top: 10px;
+}
+.references {
+	padding-bottom: 15px;
+}
+.references h3 {
+	text-align: left;
+	padding-top: 15px;
+}
+main ul {	
+	width: 95%;
+	margin: 0 auto;	
+	padding: 0;
+}
+main li {
+	width: 95%;
+	margin: 0 0 0 auto;
+	padding: 0;
+}
+/*Maps page*/
 #fivekmbuffer img {
 	max-width: 750px;
 }
@@ -161,9 +148,19 @@ footer a:hover {
 #hikers img {
 	max-width: 500px;
 }
-
 /*CV page*/
-.download {
+#CV-main {
+	padding-bottom: 10px;
+}
+[download] {
 	display: block;
 	padding-top: 10px;
+}
+#CV-main h3 {
+	text-align: left;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+#CV-main p {
+	margin: 0 0 5px 0;
 }
