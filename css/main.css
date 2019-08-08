@@ -5,22 +5,36 @@
 }
 /*Default layout*/
 body {
-	margin: 0;
+	margin: 18px 0 0 0;
 }
-#page-nav span ul {
+#page-nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white;
+	border-bottom: 1px solid teal;
+}
+#page-nav ul {
+	width: 80%;
 	margin: 0 auto;
 	padding: 0;
-	width: 80%;
+	text-align: right;
 }
-#page-nav span ul li, #page-nav span ul li a {
+#page-nav ul span {
+	margin: 0 auto;
+	padding: 0;
+}
+#page-nav ul span li {
 	display: inline;
+}
+#page-nav ul span li a {
 	padding: 5px 10px 5px 0;
 	color: #675D5D;
 	font-weight: bold;
 	font-style: italic;
 	text-decoration: none;
 }
-#page-nav span ul li a:hover {
+#page-nav ul span li a:hover {
 	text-decoration: underline;
 }
 footer {
