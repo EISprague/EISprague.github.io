@@ -6,6 +6,8 @@
 /*Default layout*/
 body {
 	margin: 18px 0 0 0;
+	position: relative;
+	min-height: calc(100vh - 19px);
 }
 #page-nav {
 	position: fixed;
@@ -39,6 +41,8 @@ body {
 }
 footer {
 	display: block;
+	position: absolute;
+	bottom: 0;
 	background-color: teal;
 	width: 100%;
 	padding: 15px 0;
@@ -164,11 +168,29 @@ main li {
 }
 /*CV page*/
 #CV-main {
-	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 53px;
+}
+#profile-pic {
+	display: inline-block;
+	float: left;
+	width: 33%;
+	max-width: 2448px;
+	border-radius: 50%;
+	padding-right: 10px;
+}
+#about-me {
+	display: inline;
+	font-size: 20px;
 }
 [download] {
 	display: block;
 	padding-top: 10px;
+	color: #675D5D;
+	text-decoration: none;
+}
+[download]:hover {
+	text-decoration: underline;
 }
 #CV-main h3 {
 	text-align: left;
