@@ -5,21 +5,22 @@
 }
 /*Default layout*/
 body {
-	margin: 18px 0 0 0;
+	margin: 29px 0 0 0;
 	position: relative;
-	min-height: calc(100vh - 19px);
+	min-height: calc(100vh - 29px);
 }
 #page-nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
 	background-color: white;
+	border-top: 1px solid teal;
 	border-bottom: 1px solid teal;
 }
 #page-nav ul {
 	width: 80%;
 	margin: 0 auto;
-	padding: 0;
+	padding: 5px 0;
 	text-align: right;
 }
 #page-nav ul span {
@@ -30,7 +31,9 @@ body {
 	display: inline;
 }
 #page-nav ul span li a {
-	padding: 5px 10px 5px 0;
+	padding: 6px 10px;
+	border-left: 1px solid teal;
+	border-right: 1px solid teal;
 	color: #675D5D;
 	font-weight: bold;
 	font-style: italic;
@@ -151,6 +154,9 @@ main li {
 	padding: 0;
 }
 /*Maps page*/
+#maps-main {
+	padding-bottom: 53px;
+}
 #fivekmbuffer img {
 	max-width: 750px;
 }
